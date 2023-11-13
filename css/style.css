@@ -456,6 +456,7 @@
     transition: opacity 300ms ease-in;
   }
   
+  
   /* Footer */
   #contact {
     background-color: var(--color-primary);

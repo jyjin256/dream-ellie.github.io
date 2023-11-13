@@ -35,8 +35,6 @@
     <!-- Javascript -->
     <script type="module" src="src/main.js" defer></script>
     <script type="module" src="src/projects.js" defer></script>
-    <script type="module" src="src/active_menu.js" defer></script>
-    <script type="module" src="src/type.js" defer></script>
   </head>
   <body>
     <!-- Header -->
@@ -65,22 +63,20 @@
     <main>
       <!-- Home -->
       <section id="home">
-        <div class="max-container home__container">
+        <div class="home__container">
           <img
             class="home__avatar"
             src="images/profile.png"
             alt="Ellie's profile"
           />
-          <div>
-            <h2 class="home__title" aria-label="Hello, I'm Dream Coder Ellie">
-              Hello <br />I&#39;m
-              <strong class="home__title--strong">Dream Coder</strong>, Ellie
-            </h2>
-            <p class="home__description">
-              A software engineer currently residing in Sydney, Australia
-            </p>
-            <a class="home__contact" href="#contact">Contact Me</a>
-          </div>
+          <h2 class="home__title">
+            Hello <br />I&#39;m
+            <strong class="home__title--strong">Dream Coder</strong>, Ellie
+          </h2>
+          <p class="home__description">
+            A software engineer currently residing in Sydney, Australia
+          </p>
+          <a class="home__contact" href="#contact">Contact Me</a>
         </div>
       </section>
       <!-- About -->
@@ -219,28 +215,28 @@
           <p class="description">Projects</p>
           <ul class="categories">
             <li>
-              <button class="category category--selected">
+              <button class="category category--selected" data-category="all">
                 All <span class="category__count">8</span>
               </button>
             </li>
             <li>
-              <button class="category">
-                Front-end <span class="category__count">3</span>
+              <button class="category" data-category="front-end">
+                Front-end <span class="category__count">4</span>
               </button>
             </li>
             <li>
-              <button class="category">
-                Back-end <span class="category__count">3</span>
+              <button class="category" data-category="back-end">
+                Back-end <span class="category__count">2</span>
               </button>
             </li>
             <li>
-              <button class="category">
+              <button class="category" data-category="mobile">
                 Mobile <span class="category__count">2</span>
               </button>
             </li>
           </ul>
           <ul class="projects">
-            <li class="project">
+            <li class="project" data-type="front-end">
               <a href="#" target="_blank">
                 <img
                   src="images/projects/project1.webp"
@@ -253,7 +249,7 @@
                 </div>
               </a>
             </li>
-            <li class="project">
+            <li class="project" data-type="front-end">
               <a href="#" target="_blank">
                 <img
                   src="images/projects/project2.webp"
@@ -266,7 +262,7 @@
                 </div>
               </a>
             </li>
-            <li class="project">
+            <li class="project" data-type="back-end">
               <a href="#" target="_blank">
                 <img
                   src="images/projects/project3.webp"
@@ -279,7 +275,7 @@
                 </div>
               </a>
             </li>
-            <li class="project">
+            <li class="project" data-type="mobile">
               <a href="#" target="_blank">
                 <img
                   src="images/projects/project4.webp"
@@ -292,7 +288,7 @@
                 </div>
               </a>
             </li>
-            <li class="project">
+            <li class="project" data-type="front-end">
               <a href="#" target="_blank">
                 <img
                   src="images/projects/project5.webp"
@@ -305,7 +301,7 @@
                 </div>
               </a>
             </li>
-            <li class="project">
+            <li class="project" data-type="back-end">
               <a href="#" target="_blank">
                 <img
                   src="images/projects/project6.webp"
@@ -318,7 +314,7 @@
                 </div>
               </a>
             </li>
-            <li class="project">
+            <li class="project" data-type="mobile">
               <a href="#" target="_blank">
                 <img
                   src="images/projects/project7.webp"
@@ -331,7 +327,7 @@
                 </div>
               </a>
             </li>
-            <li class="project">
+            <li class="project" data-type="front-end">
               <a href="#" target="_blank">
                 <img
                   src="images/projects/project8.webp"
