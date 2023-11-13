@@ -259,3 +259,8 @@ button:focus {
     background-color: var(--color-primary);
     filter: brightness(150%);
   }
+
+  .bar {
+    display: flex;
+    flex-direction: column;
+  }
